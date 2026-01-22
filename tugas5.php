@@ -11,7 +11,11 @@ class Mobil {
     }
 }
 
-// Contoh penggunaan
-$mobil = new Mobil("Toyota");
-echo $mobil->infoMobil();
+// Membuat 2 objek Mobil
+$mobil1 = new Mobil("Toyota");
+$mobil2 = new Mobil("Honda");
+
+// Menampilkan informasi masing-masing mobil
+echo $mobil1->infoMobil() . "<br>";
+echo $mobil2->infoMobil();
 ?>
