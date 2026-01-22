@@ -1,16 +1,17 @@
-<?php 
-    class Mahasiswa {
-        public $nama;
+<?php
+class Mobil {
+    public $merk;
 
-        function __construct($nama) {
-            $this->nama = $nama;
-        }
-        public function tampilkanNama() {
-            return $this->nama;
-        }
+    function __construct($merk) {
+        $this->merk = $merk;
+    }
 
-        }
-        
-        $mhs = new Mahasiswa('Fadli');
-        echo $mhs->tampilkanNama()
+    function infoMobil() {
+        return "Merk mobil: " . $this->merk;
+    }
+}
+
+// Contoh penggunaan
+$mobil = new Mobil("Toyota");
+echo $mobil->infoMobil();
 ?>

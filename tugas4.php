@@ -1,16 +1,18 @@
-<?php 
-    class Mahasiswa {
-        public $nama;
+<?php
+class User {
+    public $username;
 
-        function __construct($nama) {
-            $this->nama = $nama;
-        }
-        public function tampilkanNama() {
-            return $this->nama;
-        }
+    function setUsername($username) {
+        $this->username = $username;
+    }
 
-        }
-        
-        $mhs = new Mahasiswa('Fadli');
-        echo $mhs->tampilkanNama()
+    function getUsername() {
+        return $this->username;
+    }
+}
+
+// Contoh penggunaan
+$user = new User();
+$user->setUsername("Abil");
+echo $user->getUsername();
 ?>
